@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Computers | Computer Shop</title>
+    <!-- Google Fonts & Font Awesome 6 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Subtle Ambient Glows -->
+    <div class="bg-ambient-lights">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+    </div>
+    <div class="cyber-grid-overlay"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand-logo">
+                <div class="brand-icon-box">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <span>TechNova<span>.</span></span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="enquiry.html" class="nav-link">Enquiry</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="enquiry.html" class="btn btn-primary btn-sm nav-enquire-btn">
+                    <span>Quick Enquiry</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="section-badge">
+                            <i class="fas fa-bolt"></i> Next-Gen Computer Store & Tech Hub
+                        </div>
+                        <h1 class="hero-headline">
+                            TechNova <span class="text-gradient">Computer Shop</span>
+                        </h1>
+                        <div class="hero-subheadline">
+                            <span>Computers</span> • 
+                            <span>Laptops</span> • 
+                            <span>Accessories</span> • 
+                            <span>Repairs</span>
+                        </div>
+                        <p class="hero-description">
+                            Welcome to TechNova Computers — your ultimate destination for flagship gaming rigs, professional creator workstations, authentic hardware components, and certified repair engineering.
+                        </p>
+                        <div class="hero-cta-group">
+                            <a href="products.html" class="btn btn-primary btn-icon-right">
+                                <span>Explore Products</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="enquiry.html" class="btn btn-secondary">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Send Enquiry</span>
+                            </a>
+                        </div>
+                        <div class="hero-stats-row">
+                            <div class="stat-item">
+                                <div class="stat-num">1,200<span>+</span></div>
+                                <div class="stat-label">Custom PCs Built</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-num">100<span>%</span></div>
+                                <div class="stat-label">Genuine Components</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-num">24<span>/7</span></div>
+                                <div class="stat-label">Dedicated Support</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="hero-image-wrapper">
+                            <img src="./assets/images/hero-setup.jpg" alt="Modern computer workstation with laptop, desktop PC and monitor">
+                            <div class="hero-floating-badge">
+                                <div class="badge-pulse"></div>
+                                <div>
+                                    <h4 style="font-size: 0.92rem; font-weight: 700;">TechNova Lab Online</h4>
+                                    <p style="font-size: 0.78rem; color: var(--text-secondary);">Direct Store Support Ready</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Category Strip -->
+        <section class="quick-categories-section">
+            <div class="container">
+                <div class="category-pill-strip">
+                    <a href="products.html?category=laptops" class="category-chip">
+                        <i class="fas fa-laptop"></i>
+                        <span>Laptops</span>
+                    </a>
+                    <a href="products.html?category=desktops" class="category-chip">
+                        <i class="fas fa-desktop"></i>
+                        <span>Desktop PCs</span>
+                    </a>
+                    <a href="products.html?category=gaming" class="category-chip">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Gaming PCs</span>
+                    </a>
+                    <a href="products.html?category=monitors" class="category-chip">
+                        <i class="fas fa-tv"></i>
+                        <span>Monitors</span>
+                    </a>
+                    <a href="products.html?category=peripherals" class="category-chip">
+                        <i class="fas fa-keyboard"></i>
+                        <span>Keyboards & Mouse</span>
+                    </a>
+                    <a href="products.html?category=printers" class="category-chip">
+                        <i class="fas fa-print"></i>
+                        <span>Printers</span>
+                    </a>
+                    <a href="products.html?category=accessories" class="category-chip">
+                        <i class="fas fa-memory"></i>
+                        <span>Accessories</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. Featured Products Section -->
+        <section class="products-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fas fa-star"></i> Showcase
+                    </div>
+                    <h2 class="section-title">Featured Tech Gear</h2>
+                    <p class="section-desc">Hand-picked workstations, ultra-fast gaming beasts, and precision accessories built to push your productivity limits.</p>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card glass-card">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">Gaming Rig</span>
+                            <span class="product-stock-tag">In Stock</span>
+                            <img src="./assets/images/gaming-pc.jpg" alt="Nova Titan RTX 4080 Gaming Rig">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Gaming PCs</span>
+                            <h3 class="product-title">Nova Titan RTX Gaming Rig</h3>
+                            <p class="product-desc">Liquid-cooled custom gaming powerhouse with tempered glass chassis and high-airflow radiator.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">Intel i7 14th Gen</span>
+                                <span class="spec-pill">RTX 4080 16GB</span>
+                                <span class="spec-pill">32GB DDR5</span>
+                                <span class="spec-pill">2TB NVMe Gen4</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Starting Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>1,49,999</div>
+                                </div>
+                                <a href="enquiry.html?item=Nova%20Titan%20RTX%20Gaming%20Rig" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card glass-card">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">Ultrabook</span>
+                            <span class="product-stock-tag">Hot Deal</span>
+                            <img src="./assets/images/laptop-pro.jpg" alt="AeroBook Pro 16 AI Laptop">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Laptops</span>
+                            <h3 class="product-title">AeroBook Pro 16" AI Edition</h3>
+                            <p class="product-desc">Ultra-thin aerospace aluminum body with 3.2K OLED 120Hz display and dedicated NPU for AI acceleration.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">Core Ultra 7</span>
+                                <span class="spec-pill">Intel Arc Graphics</span>
+                                <span class="spec-pill">16GB LPDDR5X</span>
+                                <span class="spec-pill">1TB SSD</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Starting Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>89,999</div>
+                                </div>
+                                <a href="enquiry.html?item=AeroBook%20Pro%2016%20AI%20Edition" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card glass-card">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">Ultrawide</span>
+                            <span class="product-stock-tag">Top Seller</span>
+                            <img src="./assets/images/monitor-ultrawide.jpg" alt="NovaView 34-Inch Curved Ultrawide Monitor">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Monitors</span>
+                            <h3 class="product-title">NovaView 34" Curved WQHD</h3>
+                            <p class="product-desc">1500R ergonomic curvature with 165Hz refresh rate, 99% sRGB color fidelity, and USB-C 90W PD charging.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">3440 x 1440 WQHD</span>
+                                <span class="spec-pill">165Hz • 1ms</span>
+                                <span class="spec-pill">HDR 400</span>
+                                <span class="spec-pill">KVM Switch</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Starting Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>38,499</div>
+                                </div>
+                                <a href="enquiry.html?item=NovaView%2034%20Curved%20WQHD" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card glass-card">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">Studio Gear</span>
+                            <span class="product-stock-tag">Popular</span>
+                            <img src="./assets/images/keyboard-mouse.jpg" alt="NovaStrike Pro Wireless Mechanical Combo">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Keyboards & Mouse</span>
+                            <h3 class="product-title">NovaStrike Wireless Desk Set</h3>
+                            <p class="product-desc">Hot-swappable tactile mechanical keyboard paired with ultra-lightweight 26,000 DPI wireless gaming mouse.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">Tri-Mode Wireless</span>
+                                <span class="spec-pill">Gateron Brown Pro</span>
+                                <span class="spec-pill">RGB Per-Key</span>
+                                <span class="spec-pill">PBT Keycaps</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Starting Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>7,499</div>
+                                </div>
+                                <a href="enquiry.html?item=NovaStrike%20Wireless%20Desk%20Set" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 48px;">
+                    <a href="products.html" class="btn btn-secondary">
+                        <span>View All Products & Categories</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Why Choose Us Section -->
+        <section class="why-us-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fas fa-shield-alt"></i> Why Choose Us
+                    </div>
+                    <h2 class="section-title">The TechNova Advantage</h2>
+                    <p class="section-desc">Experience unmatched reliability, certified hardware knowledge, and friendly support crafted for students, professionals, and gamers.</p>
+                </div>
+
+                <div class="why-grid">
+                    <div class="why-card glass-card">
+                        <div class="why-icon-box">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 class="why-title">100% Genuine Brands</h3>
+                        <p class="why-desc">We source directly from authorized distributors including Intel, AMD, NVIDIA, Asus, Dell, HP, and Kingston with full brand warranty.</p>
+                    </div>
+
+                    <div class="why-card glass-card">
+                        <div class="why-icon-box">
+                            <i class="fas fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3 class="why-title">Certified Tech Engineers</h3>
+                        <p class="why-desc">Our in-house technicians hold expert hardware certifications with comprehensive micro-soldering and troubleshooting experience.</p>
+                    </div>
+
+                    <div class="why-card glass-card">
+                        <div class="why-icon-box">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3 class="why-title">Precision Custom PC Builds</h3>
+                        <p class="why-desc">From thermal stress-testing to clean cable management, each machine is bench-tested for 24 hours before handover.</p>
+                    </div>
+
+                    <div class="why-card glass-card">
+                        <div class="why-icon-box">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <h3 class="why-title">Transparent & Best Pricing</h3>
+                        <p class="why-desc">Honest, student-friendly pricing with no hidden diagnosis charges or unexpected replacement fees.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Our Services Preview Section -->
+        <section class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fas fa-wrench"></i> Repair & Solutions
+                    </div>
+                    <h2 class="section-title">Our Technical Services</h2>
+                    <p class="section-desc">Comprehensive diagnostics, hardware repairs, rapid OS configurations, and upgrades to keep your system performing at peak velocity.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card glass-card">
+                        <div>
+                            <div class="service-card-top">
+                                <div class="service-icon-box">
+                                    <i class="fas fa-laptop-medical"></i>
+                                </div>
+                                <span class="service-badge">Hardware & Chip</span>
+                            </div>
+                            <h3 class="service-title">Computer & Laptop Repair</h3>
+                            <p class="service-desc">Complete board-level repair, screen replacement, hinge fixes, keyboard replacements, and power jack recovery.</p>
+                            <ul class="service-features-list">
+                                <li><i class="fas fa-check-circle"></i> Free Initial Diagnosis</li>
+                                <li><i class="fas fa-check-circle"></i> 100% OEM Grade Spare Parts</li>
+                                <li><i class="fas fa-check-circle"></i> 30-Day Service Guarantee</li>
+                            </ul>
+                        </div>
+                        <a href="enquiry.html?service=Computer%20and%20Laptop%20Repair" class="btn btn-outline btn-sm">Book Service</a>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card glass-card">
+                        <div>
+                            <div class="service-card-top">
+                                <div class="service-icon-box">
+                                    <i class="fas fa-gauge-high"></i>
+                                </div>
+                                <span class="service-badge">Performance Boost</span>
+                            </div>
+                            <h3 class="service-title">SSD & RAM Speed Upgrades</h3>
+                            <p class="service-desc">Supercharge slow laptops and desktops with high-speed Gen4 NVMe SSDs and high-frequency DDR4/DDR5 memory modules.</p>
+                            <ul class="service-features-list">
+                                <li><i class="fas fa-check-circle"></i> 5x to 10x Boot Speed Increase</li>
+                                <li><i class="fas fa-check-circle"></i> Zero Data Loss OS Migration</li>
+                                <li><i class="fas fa-check-circle"></i> Same-Day Turnaround</li>
+                            </ul>
+                        </div>
+                        <a href="enquiry.html?service=SSD%20and%20RAM%20Upgrade" class="btn btn-outline btn-sm">Book Service</a>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card glass-card">
+                        <div>
+                            <div class="service-card-top">
+                                <div class="service-icon-box">
+                                    <i class="fas fa-tower-broadcast"></i>
+                                </div>
+                                <span class="service-badge">Enthusiast Grade</span>
+                            </div>
+                            <h3 class="service-title">Custom PC Architecture</h3>
+                            <p class="service-desc">Bespoke PC crafting designed specifically for AI model training, 3D rendering, video production, or competitive esports.</p>
+                            <ul class="service-features-list">
+                                <li><i class="fas fa-check-circle"></i> Balanced Component Pairing</li>
+                                <li><i class="fas fa-check-circle"></i> Optimized Thermal Airflow</li>
+                                <li><i class="fas fa-check-circle"></i> Bios Tuning & Benchmarking</li>
+                            </ul>
+                        </div>
+                        <a href="enquiry.html?service=Custom%20PC%20Building" class="btn btn-outline btn-sm">Book Service</a>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 45px;">
+                    <a href="services.html" class="btn btn-secondary">
+                        <span>Explore Our Professional Services</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Customer Highlights / Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fas fa-comments"></i> Real Stories
+                    </div>
+                    <h2 class="section-title">Customer Highlights</h2>
+                    <p class="section-desc">See why students, local developers, and gaming enthusiasts trust TechNova Computers for their hardware and service needs.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card glass-card">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">
+                            "Got my custom gaming setup built by TechNova with an RTX 4070. The cable management is flawless and temperatures never cross 65°C under heavy loads. Outstanding guidance on components within my budget!"
+                        </p>
+                        <div class="testimonial-user">
+                            <div class="user-avatar-initials">AK</div>
+                            <div class="user-info">
+                                <h4>Aarav Kothari</h4>
+                                <span>BCA Computer Science Student</span>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card glass-card">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">
+                            "My Dell laptop had a dead motherboard issue right before my college presentation. The TechNova engineering team diagnosed and repaired the power IC within 24 hours. Saved my project and my data!"
+                        </p>
+                        <div class="testimonial-user">
+                            <div class="user-avatar-initials">PR</div>
+                            <div class="user-info">
+                                <h4>Pooja Rathod</h4>
+                                <span>Software Engineering Intern</span>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card glass-card">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">
+                            "Upgraded my sluggish 5-year-old desktop with a Crucial 1TB NVMe and 16GB RAM through TechNova. Boot time went from 3 minutes to under 8 seconds! The price was completely fair and transparent."
+                        </p>
+                        <div class="testimonial-user">
+                            <div class="user-avatar-initials">VP</div>
+                            <div class="user-info">
+                                <h4>Vikram Patel</h4>
+                                <span>Digital Creator & Designer</span>
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Call-to-Action Banner -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box">
+                    <div class="cta-content">
+                        <h2>Ready to Build or Upgrade Your Dream Machine?</h2>
+                        <p>Speak directly with our hardware technicians. Whether you need a customized AI training workstation, an esports rig, or quick laptop repair, we're ready to assist.</p>
+                    </div>
+                    <div class="cta-actions">
+                        <a href="enquiry.html" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Enquiry</span>
+                        </a>
+                        <a href="tel:+919876543210" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i>
+                            <span>Call Store</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Quick Actions -->
+    <div class="floating-actions">
+        <button id="back-to-top" class="float-btn float-top" aria-label="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="brand-logo">
+                        <div class="brand-icon-box">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <span>TechNova<span>.</span></span>
+                    </a>
+                    <p>
+                        "Computer Shop" — Premier destination for high-end PCs, gaming gear, genuine parts, and expert hardware repair solutions.
+                    </p>
+                    <div style="display: flex; gap: 12px; margin-top: 16px;">
+                        <a href="https://www.linkedin.com" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="mailto:info@technovacomputers.com" class="btn btn-outline btn-sm"><i class="fas fa-envelope"></i> Email</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="products.html"><i class="fas fa-chevron-right"></i> Products</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="enquiry.html"><i class="fas fa-chevron-right"></i> Enquiry Form</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Key Services</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Laptop & PC Repair</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Custom PC Building</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> SSD & RAM Upgrades</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Windows Installation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Store Contact</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <strong>Website:</strong><br>
+                            <a href="https://www.technovacomputers.com" target="_blank">www.technovacomputers.com</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <strong>Phone:</strong><br>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email:</strong><br>
+                            <a href="mailto:info@technovacomputers.com">info@technovacomputers.com</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Store Timings:</strong><br>
+                            Mon - Sat: 10:00 AM - 9:00 PM<br>
+                            Sunday: 11:00 AM - 6:00 PM
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

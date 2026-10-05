@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Enquiry & Support | TechNova Computers</title>
+    <!-- Google Fonts & Font Awesome 6 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Subtle Ambient Glows -->
+    <div class="bg-ambient-lights">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+    </div>
+    <div class="cyber-grid-overlay"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand-logo">
+                <div class="brand-icon-box">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <span>TechNova<span>.</span></span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="enquiry.html" class="nav-link active">Enquiry</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://www.linkedin.com" target="_blank" class="btn btn-primary btn-sm nav-enquire-btn">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section style="padding: 60px 0 30px 0;">
+            <div class="container">
+                <div class="section-header" style="margin-bottom: 35px;">
+                    <div class="section-badge">
+                        <i class="fas fa-paper-plane"></i> Direct Hardware Consultation
+                    </div>
+                    <h1 class="section-title">Send a Hardware or Service Enquiry</h1>
+                    <p class="section-desc">Have a question regarding custom PC parts, laptop repairs, or availability? Submit the verified form below or connect instantly via phone or WhatsApp.</p>
+                </div>
+
+                <!-- Main Enquiry Grid Layout -->
+                <div class="enquiry-layout-grid">
+
+                    <!-- Left: Professional Enquiry Form -->
+                    <div class="enquiry-form-card glass-card">
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border-subtle);">
+                            <div>
+                                <h2 style="font-size: 1.45rem; font-weight: 700;">Customer Enquiry Form</h2>
+                                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Fill in your details below. Fast response guaranteed within business hours.</p>
+                            </div>
+                            <span class="mono-tag" style="background: rgba(0, 240, 255, 0.1); color: var(--accent-cyan); padding: 4px 10px; border-radius: var(--radius-sm); border: 1px solid rgba(0, 240, 255, 0.2);">
+                                <i class="fas fa-bolt"></i> Live Support
+                            </span>
+                        </div>
+
+                        <form id="tnc-enquiry-form" novalidate>
+                            <!-- Row 1: Full Name & Email Address -->
+                            <div class="form-grid-row">
+                                <div class="form-group">
+                                    <label for="enquiry-name" class="form-label">
+                                        Full Name <span class="req">*</span>
+                                    </label>
+                                    <div class="input-with-icon">
+                                        <i class="fas fa-user"></i>
+                                        <input type="text" id="enquiry-name" class="form-control" placeholder="e.g. Rahul Sharma" required autocomplete="name">
+                                    </div>
+                                    <div class="error-message"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="enquiry-email" class="form-label">
+                                        Email Address <span class="req">*</span>
+                                    </label>
+                                    <div class="input-with-icon">
+                                        <i class="fas fa-envelope"></i>
+                                        <input type="email" id="enquiry-email" class="form-control" placeholder="e.g. rahul@example.com" required autocomplete="email">
+                                    </div>
+                                    <div class="error-message"></div>
+                                </div>
+                            </div>
+
+                            <!-- Row 2: Phone Number & Preferred Contact Method -->
+                            <div class="form-grid-row">
+                                <div class="form-group">
+                                    <label for="enquiry-phone" class="form-label">
+                                        Phone Number (10-Digit Indian Mobile) <span class="req">*</span>
+                                    </label>
+                                    <div class="input-with-icon">
+                                        <i class="fas fa-phone"></i>
+                                        <input type="tel" id="enquiry-phone" class="form-control" placeholder="e.g. 9876543210" maxlength="10" required autocomplete="tel">
+                                    </div>
+                                    <div class="error-message"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        Preferred Contact Method <span class="req">*</span>
+                                    </label>
+                                    <div class="radio-group-wrap">
+                                        <label class="contact-pill-label">
+                                            <input type="radio" name="contact_method" value="Phone Call" checked>
+                                            <i class="fas fa-phone-volume" style="color: var(--accent-cyan);"></i> Phone Call
+                                        </label>
+                                        <label class="contact-pill-label">
+                                            <input type="radio" name="contact_method" value="Email">
+                                            <i class="fas fa-envelope" style="color: var(--accent-electric);"></i> Email
+                                        </label>
+                                        <label class="contact-pill-label">
+                                            <input type="radio" name="contact_method" value="In-Store Visit">
+                                            <i class="fas fa-store" style="color: var(--accent-cyan);"></i> In-Store Visit
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Row 3: Product / Service Selection -->
+                            <div class="form-grid-row">
+                                <div class="form-group">
+                                    <label for="enquiry-interest" class="form-label">
+                                        Select Product / Service <span class="req">*</span>
+                                    </label>
+                                    <div class="input-with-icon">
+                                        <i class="fas fa-list-check"></i>
+                                        <select id="enquiry-interest" class="form-select" required>
+                                            <option value="" disabled selected>-- Choose Product or Service --</option>
+                                            <optgroup label="Popular Products">
+                                                <option value="Nova Titan RTX Gaming Rig">Nova Titan RTX Gaming Rig</option>
+                                                <option value="AeroBook Pro 16 AI Edition">AeroBook Pro 16" AI Edition Laptop</option>
+                                                <option value="NovaBook Studio 16 Pro">NovaBook Studio 16 Pro</option>
+                                                <option value="AeroBook 14 Ultralight">AeroBook 14 Ultralight Laptop</option>
+                                                <option value="Apex Predator 17 Flagship">Apex Predator 17 Gaming Laptop</option>
+                                                <option value="Nova Elite Workstation Pro">Nova Elite Workstation Pro</option>
+                                                <option value="Precision Studio AIO 27">Precision Studio All-in-One 27"</option>
+                                                <option value="HyperForge Esports Edition">HyperForge Esports Gaming PC</option>
+                                                <option value="NovaView 34 Curved WQHD">NovaView 34" Curved WQHD Monitor</option>
+                                                <option value="ApexPulse 27 240Hz Pro">ApexPulse 27" 240Hz Gaming Monitor</option>
+                                                <option value="NovaStrike Wireless Desk Set">NovaStrike Wireless Desk Set</option>
+                                                <option value="ApexGlide Hyper-Light Mouse">ApexGlide Hyper-Light Wireless Mouse</option>
+                                                <option value="EcoLaser MultiFunction Pro">EcoLaser MultiFunction Pro Printer</option>
+                                                <option value="NovaVelocity 2TB Gen4 SSD">NovaVelocity 2TB Gen4 M.2 SSD</option>
+                                                <option value="FuryX 32GB DDR5 RAM Kit">FuryX 32GB DDR5 6000MHz RAM Kit</option>
+                                                <option value="SonicImmersion 7.1 Headset">SonicImmersion 7.1 Studio Headset</option>
+                                                <option value="NovaNet WiFi 6 Mesh Router">NovaNet WiFi 6 Mesh Router</option>
+                                            </optgroup>
+                                            <optgroup label="Technical Services">
+                                                <option value="Computer and Laptop Repair">Computer / Laptop Repair</option>
+                                                <option value="SSD and RAM Upgrade">SSD & RAM Memory Upgrade</option>
+                                                <option value="Custom PC Building">Custom PC Architecture & Assembly</option>
+                                                <option value="Windows Installation">Windows & Software Setup</option>
+                                            </optgroup>
+                                            <optgroup label="Other Queries">
+                                                <option value="Custom Configured PC Quotation">Custom Configured PC Quotation</option>
+                                                <option value="Bulk College / Lab Requirement">Bulk College / Lab Requirement</option>
+                                                <option value="other">General Technical Consultation</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                    <div class="error-message"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="enquiry-budget" class="form-label">
+                                        Estimated Budget Range <span class="req">*</span>
+                                    </label>
+                                    <div class="input-with-icon">
+                                        <i class="fas fa-indian-rupee-sign"></i>
+                                        <select id="enquiry-budget" class="form-select" required>
+                                            <option value="" disabled selected>-- Select Budget Range --</option>
+                                            <option value="under-15k">Under ₹15,000 (Repairs, Peripherals & SSD Upgrades)</option>
+                                            <option value="15k-40k">₹15,000 - ₹40,000 (Monitors, Entry Desktops & Upgrades)</option>
+                                            <option value="40k-80k">₹40,000 - ₹80,000 (Mid-Range Laptops & Gaming PCs)</option>
+                                            <option value="80k-150k">₹80,000 - ₹1,50,000 (High-End Gaming & Creator Laptops)</option>
+                                            <option value="above-150k">₹1,50,000+ (Flagship Workstations & Deep Learning Rigs)</option>
+                                            <option value="flexible">Flexible / Seeking Guidance</option>
+                                        </select>
+                                    </div>
+                                    <div class="error-message"></div>
+                                </div>
+                            </div>
+
+                            <!-- Row 4: Message / Specific Requirements -->
+                            <div class="form-group">
+                                <label for="enquiry-message" class="form-label">
+                                    Your Message & Specific Requirements <span class="req">*</span>
+                                </label>
+                                <textarea id="enquiry-message" class="form-control" rows="4" placeholder="Describe the model you need, symptoms of computer issue, or custom PC specifications you have in mind..." required></textarea>
+                                <div class="error-message"></div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="form-actions-row">
+                                <button type="submit" class="btn btn-primary" style="flex: 2;">
+                                    <i class="fas fa-paper-plane"></i>
+                                    <span>Submit Enquiry</span>
+                                </button>
+                                <button type="reset" class="btn btn-secondary" style="flex: 1;">
+                                    <i class="fas fa-rotate-left"></i>
+                                    <span>Reset Form</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Right: Contact Information Card -->
+                    <div class="contact-info-card glass-card">
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 22px;">
+                            <h3 style="font-size: 1.35rem; font-weight: 700;">Contact Us</h3>
+                            <span style="font-size: 0.78rem; background: rgba(16, 185, 129, 0.15); color: #34d399; padding: 4px 10px; border-radius: var(--radius-full); border: 1px solid rgba(16, 185, 129, 0.3);">
+                                <i class="fas fa-circle" style="font-size: 0.5rem; vertical-align: middle;"></i> Open Now
+                            </span>
+                        </div>
+
+                        <!-- Website Domain -->
+                        <div class="contact-item">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div>
+                                <div class="contact-label">Official Website</div>
+                                <div class="contact-val">
+                                    <a href="https://www.technovacomputers.com" target="_blank">www.technovacomputers.com</a>
+                                </div>
+                                <span style="font-size: 0.78rem; color: var(--text-muted);">Verified TechNova Domain</span>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="contact-item">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <div class="contact-label">Direct Phone Helpline</div>
+                                <div class="contact-val">
+                                    <a href="tel:+919876543210">+91 98765 43210</a>
+                                </div>
+                                <span style="font-size: 0.78rem; color: var(--text-muted);">Mon to Sat, 10:00 AM - 9:00 PM</span>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="contact-item">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="contact-label">Official Email</div>
+                                <div class="contact-val">
+                                    <a href="mailto:info@technovacomputers.com" style="word-break: break-all;">info@technovacomputers.com</a>
+                                </div>
+                                <span style="font-size: 0.78rem; color: var(--text-muted);">Official Quotations & Invoices</span>
+                            </div>
+                        </div>
+
+                        <!-- Store Hours -->
+                        <div class="contact-item">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <div class="contact-label">Operating Hours</div>
+                                <div class="contact-val" style="font-size: 0.95rem;">
+                                    Mon - Sat: 10:00 AM – 9:00 PM<br>
+                                    Sunday: 11:00 AM – 6:00 PM
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Store Location -->
+                        <div class="contact-item">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-map-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="contact-label">Store Location</div>
+                                <div class="contact-val" style="font-size: 0.95rem;">
+                                    TechNova Computers Main Hub<br>
+                                    Technology Center, Cyber Galleria
+                                </div>
+                                <span style="font-size: 0.78rem; color: var(--text-muted);">Free Customer Parking & Test Bench</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Success Confirmation Modal -->
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-content-card">
+            <div class="modal-success-icon">
+                <i class="fas fa-check"></i>
+            </div>
+            <h3 class="modal-title">Enquiry Submitted Successfully!</h3>
+            <p class="modal-desc">
+                Thank you for contacting TechNova Computers. Your enquiry ticket has been registered in our local system. Our team will review your specifications and contact you shortly.
+            </p>
+
+            <div class="modal-summary-box">
+                <p>
+                    <span class="label">Reference ID:</span>
+                    <span class="value text-cyan" id="modal-ref-id">TNC-2026-8941</span>
+                </p>
+                <p>
+                    <span class="label">Customer Name:</span>
+                    <span class="value" id="modal-client-name">-</span>
+                </p>
+                <p>
+                    <span class="label">Mobile Number:</span>
+                    <span class="value" id="modal-phone-num">-</span>
+                </p>
+                <p>
+                    <span class="label">Interest / Service:</span>
+                    <span class="value" id="modal-interest-val">-</span>
+                </p>
+                <p>
+                    <span class="label">Preferred Contact:</span>
+                    <span class="value" id="modal-contact-method">Phone Call</span>
+                </p>
+            </div>
+
+            <div style="display: flex; gap: 12px; justify-content: center;">
+                <button type="button" id="close-modal-btn" class="btn btn-primary btn-sm">
+                    <i class="fas fa-check"></i> Close Window
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Quick Actions -->
+    <div class="floating-actions">
+        <button id="back-to-top" class="float-btn float-top" aria-label="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="brand-logo">
+                        <div class="brand-icon-box">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <span>TechNova<span>.</span></span>
+                    </a>
+                    <p>
+                        "Computer Shop" — Certified computer repairs, gaming PCs, workstations, and original accessories.
+                    </p>
+                    <div style="display: flex; gap: 12px; margin-top: 16px;">
+                        <a href="https://www.linkedin.com" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="mailto:info@technovacomputers.com" class="btn btn-outline btn-sm"><i class="fas fa-envelope"></i> Email</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="products.html"><i class="fas fa-chevron-right"></i> Products</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="enquiry.html"><i class="fas fa-chevron-right"></i> Enquiry Form</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Key Services</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Laptop & PC Repair</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Custom PC Building</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> SSD & RAM Upgrades</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Windows Installation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Direct Contact</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <strong>Website:</strong><br>
+                            <a href="https://www.technovacomputers.com" target="_blank">www.technovacomputers.com</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <strong>Phone:</strong><br>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email:</strong><br>
+                            <a href="mailto:info@technovacomputers.com">info@technovacomputers.com</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Store Timings:</strong><br>
+                            Mon - Sat: 10:00 AM - 9:00 PM<br>
+                            Sunday: 11:00 AM - 6:00 PM
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

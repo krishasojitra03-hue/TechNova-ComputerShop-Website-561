@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Catalog | TechNova Computers</title>
+    <!-- Google Fonts & Font Awesome 6 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Subtle Ambient Glows -->
+    <div class="bg-ambient-lights">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+    </div>
+    <div class="cyber-grid-overlay"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand-logo">
+                <div class="brand-icon-box">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <span>TechNova<span>.</span></span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="enquiry.html" class="nav-link">Enquiry</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="enquiry.html" class="btn btn-primary btn-sm nav-enquire-btn">
+                    <span>Quick Enquiry</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section style="padding: 60px 0 20px 0;">
+            <div class="container">
+                <div class="section-header" style="margin-bottom: 30px;">
+                    <div class="section-badge">
+                        <i class="fas fa-microchip"></i> Hardware Catalog
+                    </div>
+                    <h1 class="section-title">Hardware & Systems Catalog</h1>
+                    <p class="section-desc">Explore verified systems, flagship laptops, precision gaming rigs, monitors, and components. Filter by category or search instantly below.</p>
+                </div>
+
+                <!-- Filter & Live Search Toolbar -->
+                <div class="filter-search-bar">
+                    <div class="search-box-wrap">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="product-search" class="search-input" placeholder="Search by name, spec (e.g. RTX 4080, OLED, RAM)...">
+                    </div>
+
+                    <nav class="category-filter-nav" aria-label="Product categories">
+                        <button class="filter-btn active" data-filter="all">All Items</button>
+                        <button class="filter-btn" data-filter="laptops">Laptops</button>
+                        <button class="filter-btn" data-filter="desktops">Desktop PCs</button>
+                        <button class="filter-btn" data-filter="gaming">Gaming PCs</button>
+                        <button class="filter-btn" data-filter="monitors">Monitors</button>
+                        <button class="filter-btn" data-filter="peripherals">Keyboards & Mouse</button>
+                        <button class="filter-btn" data-filter="printers">Printers</button>
+                        <button class="filter-btn" data-filter="accessories">Accessories</button>
+                    </nav>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="product-grid" id="main-product-grid">
+
+                    <!-- ================= LAPTOPS ================= -->
+                    <div class="product-card glass-card" data-category="laptops">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">Creator Edition</span>
+                            <span class="product-stock-tag">In Stock</span>
+                            <img src="./assets/images/laptop-creator.jpg" alt="NovaBook Studio 16 Pro Laptop">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Laptops</span>
+                            <h3 class="product-title">NovaBook Studio 16 Pro</h3>
+                            <p class="product-desc">Workstation-grade creator laptop with 4K color-accurate Mini-LED display, RTX studio graphics, and whisper-quiet vapor chamber cooling.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">Intel Core Ultra 9</span>
+                                <span class="spec-pill">RTX 4070 8GB</span>
+                                <span class="spec-pill">32GB DDR5</span>
+                                <span class="spec-pill">1TB Gen4 SSD</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>1,24,999</div>
+                                </div>
+                                <a href="enquiry.html?item=NovaBook%20Studio%2016%20Pro" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card glass-card" data-category="laptops">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">Ultrabook</span>
+                            <span class="product-stock-tag">Hot Deal</span>
+                            <img src="./assets/images/laptop-ultrabook.jpg" alt="AeroBook 14 Ultralight Laptop">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Laptops</span>
+                            <h3 class="product-title">AeroBook 14 Ultralight</h3>
+                            <p class="product-desc">Weighing just 1.1kg with up to 18 hours battery life, magnesium-alloy chassis, and stunning 2.8K 90Hz OLED panel.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">AMD Ryzen 7 8840HS</span>
+                                <span class="spec-pill">Radeon 780M</span>
+                                <span class="spec-pill">16GB LPDDR5X</span>
+                                <span class="spec-pill">512GB SSD</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>68,499</div>
+                                </div>
+                                <a href="enquiry.html?item=AeroBook%2014%20Ultralight" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card glass-card" data-category="laptops">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">Esports Flagship</span>
+                            <span class="product-stock-tag">Featured</span>
+                            <img src="./assets/images/laptop-pro.jpg" alt="Apex Predator 17 Gaming Laptop">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Laptops</span>
+                            <h3 class="product-title">Apex Predator 17 Flagship</h3>
+                            <p class="product-desc">Max-power mobile battlestation engineered for high frame-rate AAA gaming and complex AI computing tasks.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">Intel i9 14900HX</span>
+                                <span class="spec-pill">RTX 4080 12GB</span>
+                                <span class="spec-pill">32GB DDR5 5600MHz</span>
+                                <span class="spec-pill">240Hz QHD Display</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>1,84,999</div>
+                                </div>
+                                <a href="enquiry.html?item=Apex%20Predator%2017%20Flagship" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================= DESKTOP PCS ================= -->
+                    <div class="product-card glass-card" data-category="desktops">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">Workstation</span>
+                            <span class="product-stock-tag">Custom Build</span>
+                            <img src="./assets/images/workstation-pc.jpg" alt="Nova Elite Workstation Pro">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Desktop PCs</span>
+                            <h3 class="product-title">Nova Elite Workstation Pro</h3>
+                            <p class="product-desc">Architectural and deep-learning workstation fitted with ECC memory support, liquid thermal sync, and workstation chassis.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">Intel i9-14900K</span>
+                                <span class="spec-pill">RTX 4080 Super 16GB</span>
+                                <span class="spec-pill">64GB DDR5 RAM</span>
+                                <span class="spec-pill">4TB PCIe Gen4 SSD</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>2,15,000</div>
+                                </div>
+                                <a href="enquiry.html?item=Nova%20Elite%20Workstation%20Pro" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card glass-card" data-category="desktops">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">All-In-One</span>
+                            <span class="product-stock-tag">In Stock</span>
+                            <img src="./assets/images/desktop-allinone.jpg" alt="Precision Studio All-in-One 27">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Desktop PCs</span>
+                            <h3 class="product-title">Precision Studio AIO 27"</h3>
+                            <p class="product-desc">Sleek clutter-free all-in-one computer featuring 4K InfinityEdge touchscreen, wireless keyboard and mouse suite.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">Core i7 13700</span>
+                                <span class="spec-pill">27" 4K IPS Touch</span>
+                                <span class="spec-pill">32GB RAM</span>
+                                <span class="spec-pill">1TB SSD + 2TB HDD</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>84,999</div>
+                                </div>
+                                <a href="enquiry.html?item=Precision%20Studio%20AIO%2027" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================= GAMING PCS ================= -->
+                    <div class="product-card glass-card" data-category="gaming">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">Custom Rig</span>
+                            <span class="product-stock-tag">Popular</span>
+                            <img src="./assets/images/gaming-pc.jpg" alt="Nova Titan RTX Gaming Rig">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Gaming PCs</span>
+                            <h3 class="product-title">Nova Titan RTX Gaming Rig</h3>
+                            <p class="product-desc">ARGB glass chamber showcase with custom dual-loop 360mm AIO cooler, braided power cables, and tuned GPU clocks.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">Ryzen 7 7800X3D</span>
+                                <span class="spec-pill">RTX 4070 Ti Super</span>
+                                <span class="spec-pill">32GB DDR5 6000MHz</span>
+                                <span class="spec-pill">850W Gold PSU</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>1,49,999</div>
+                                </div>
+                                <a href="enquiry.html?item=Nova%20Titan%20RTX%20Gaming%20Rig" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card glass-card" data-category="gaming">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">Esports Rig</span>
+                            <span class="product-stock-tag">Best Value</span>
+                            <img src="./assets/images/custom-pc-build.jpg" alt="HyperForge Esports Battlestation">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Gaming PCs</span>
+                            <h3 class="product-title">HyperForge Esports Edition</h3>
+                            <p class="product-desc">High FPS powerhouse for CS2, Valorant, Cyberpunk, and GTA with magnetic dust filters and optimal airflow routing.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">Core i5-14400F</span>
+                                <span class="spec-pill">RTX 4060 Ti 8GB</span>
+                                <span class="spec-pill">16GB DDR5</span>
+                                <span class="spec-pill">1TB Gen4 M.2 SSD</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>82,999</div>
+                                </div>
+                                <a href="enquiry.html?item=HyperForge%20Esports%20Edition" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================= MONITORS ================= -->
+                    <div class="product-card glass-card" data-category="monitors">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">Curved 21:9</span>
+                            <span class="product-stock-tag">In Stock</span>
+                            <img src="./assets/images/monitor-ultrawide.jpg" alt="NovaView 34-inch Curved Ultrawide Monitor">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Monitors</span>
+                            <h3 class="product-title">NovaView 34" Curved WQHD</h3>
+                            <p class="product-desc">1500R panoramic curved immersive display featuring USB-C hub connectivity, built-in dual speakers, and HDR support.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">3440 x 1440 WQHD</span>
+                                <span class="spec-pill">165Hz Refresh</span>
+                                <span class="spec-pill">1ms Response</span>
+                                <span class="spec-pill">Type-C 90W PD</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>38,499</div>
+                                </div>
+                                <a href="enquiry.html?item=NovaView%2034%20Curved%20WQHD" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card glass-card" data-category="monitors">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">Fast IPS</span>
+                            <span class="product-stock-tag">Esports Ready</span>
+                            <img src="./assets/images/monitor-gaming.jpg" alt="ApexPulse 27-inch 240Hz Gaming Monitor">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Monitors</span>
+                            <h3 class="product-title">ApexPulse 27" 240Hz Pro</h3>
+                            <p class="product-desc">Ultra-responsive esports IPS panel with AMD FreeSync Premium, G-Sync compatibility, and height-adjustable stand.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">2560 x 1440 QHD</span>
+                                <span class="spec-pill">240Hz Fast IPS</span>
+                                <span class="spec-pill">0.5ms MPRT</span>
+                                <span class="spec-pill">99% sRGB</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>24,999</div>
+                                </div>
+                                <a href="enquiry.html?item=ApexPulse%2027%20240Hz%20Pro" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================= KEYBOARDS & MOUSE ================= -->
+                    <div class="product-card glass-card" data-category="peripherals">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">Desk Set</span>
+                            <span class="product-stock-tag">In Stock</span>
+                            <img src="./assets/images/keyboard-mouse.jpg" alt="NovaStrike Wireless Mechanical Keyboard & Mouse Set">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Keyboards & Mouse</span>
+                            <h3 class="product-title">NovaStrike Wireless Desk Set</h3>
+                            <p class="product-desc">Custom-lubed hot-swap mechanical keyboard with multi-device Bluetooth/2.4G wireless and precision gaming mouse.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">Hot-swappable PCB</span>
+                                <span class="spec-pill">PBT Dye-sub Caps</span>
+                                <span class="spec-pill">2.4GHz + BT 5.2</span>
+                                <span class="spec-pill">Battery 4000mAh</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>7,499</div>
+                                </div>
+                                <a href="enquiry.html?item=NovaStrike%20Wireless%20Desk%20Set" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card glass-card" data-category="peripherals">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">Ultra-Light</span>
+                            <span class="product-stock-tag">Hot Item</span>
+                            <img src="./assets/images/gaming-mouse.jpg" alt="ApexGlide Hyper-Light Wireless Mouse">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Keyboards & Mouse</span>
+                            <h3 class="product-title">ApexGlide Hyper-Light Mouse</h3>
+                            <p class="product-desc">Featherweight 54-gram ergonomic wireless mouse with 26K DPI optical sensor and PTFE glide skates.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">26,000 DPI Sensor</span>
+                                <span class="spec-pill">54 Grams</span>
+                                <span class="spec-pill">Optical Switches</span>
+                                <span class="spec-pill">80hr Battery</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>3,699</div>
+                                </div>
+                                <a href="enquiry.html?item=ApexGlide%20Hyper-Light%20Mouse" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================= PRINTERS ================= -->
+                    <div class="product-card glass-card" data-category="printers">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">Laser All-In-One</span>
+                            <span class="product-stock-tag">Office Ready</span>
+                            <img src="./assets/images/printer.jpg" alt="EcoLaser MultiFunction Wireless Laser Printer">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Printers</span>
+                            <h3 class="product-title">EcoLaser MultiFunction Pro</h3>
+                            <p class="product-desc">High-speed dual-sided wireless laser printer with auto document feeder (ADF), high-res scanner, and mobile app print support.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">32 PPM Fast Print</span>
+                                <span class="spec-pill">Auto Duplex</span>
+                                <span class="spec-pill">WiFi / LAN / USB</span>
+                                <span class="spec-pill">Scan to Email/Cloud</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>19,999</div>
+                                </div>
+                                <a href="enquiry.html?item=EcoLaser%20MultiFunction%20Pro" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================= ACCESSORIES ================= -->
+                    <div class="product-card glass-card" data-category="accessories">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">Gen4 Storage</span>
+                            <span class="product-stock-tag">Fast Read</span>
+                            <img src="./assets/images/nvme-ssd.jpg" alt="NovaVelocity 2TB Gen4 NVMe M.2 SSD">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Computer Accessories</span>
+                            <h3 class="product-title">NovaVelocity 2TB Gen4 SSD</h3>
+                            <p class="product-desc">Blazing fast 7,450 MB/s sequential speeds with aluminum thermal heatsink. Ideal for PS5, laptops, and workstation PCs.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">7450 MB/s Read</span>
+                                <span class="spec-pill">6900 MB/s Write</span>
+                                <span class="spec-pill">DRAM Cache 2GB</span>
+                                <span class="spec-pill">5-Year Warranty</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>12,999</div>
+                                </div>
+                                <a href="enquiry.html?item=NovaVelocity%202TB%20Gen4%20SSD" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card glass-card" data-category="accessories">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">DDR5 RGB</span>
+                            <span class="product-stock-tag">High Speed</span>
+                            <img src="./assets/images/ram-ssd.jpg" alt="FuryX 32GB DDR5 6000MHz Dual Channel RAM Kit">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Computer Accessories</span>
+                            <h3 class="product-title">FuryX 32GB (2x16) DDR5 Kit</h3>
+                            <p class="product-desc">High-frequency DDR5 memory with aggressive aluminum heat spreaders and dynamic addressable RGB lighting.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">6000MHz CL30</span>
+                                <span class="spec-pill">Intel XMP 3.0</span>
+                                <span class="spec-pill">AMD EXPO Certified</span>
+                                <span class="spec-pill">Lifetime Warranty</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>10,499</div>
+                                </div>
+                                <a href="enquiry.html?item=FuryX%2032GB%20DDR5%20RAM%20Kit" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card glass-card" data-category="accessories">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">Audio</span>
+                            <span class="product-stock-tag">Popular</span>
+                            <img src="./assets/images/accessories-headset.jpg" alt="SonicImmersion Pro 7.1 Studio Headset">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Computer Accessories</span>
+                            <h3 class="product-title">SonicImmersion 7.1 Headset</h3>
+                            <p class="product-desc">Spatial sound headphones with 50mm neodymium audio drivers, memory-foam ear cushions, and noise-cancelling broadcast mic.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">7.1 Virtual Spatial</span>
+                                <span class="spec-pill">50mm Neodymium</span>
+                                <span class="spec-pill">Detachable Mic</span>
+                                <span class="spec-pill">Multi-Platform</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>4,999</div>
+                                </div>
+                                <a href="enquiry.html?item=SonicImmersion%207.1%20Headset" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card glass-card" data-category="accessories">
+                        <div class="product-thumb">
+                            <span class="product-badge-tag">Networking</span>
+                            <span class="product-stock-tag">In Stock</span>
+                            <img src="./assets/images/wifi-router.jpg" alt="NovaNet WiFi 6 Gigabit Router">
+                        </div>
+                        <div class="product-details">
+                            <span class="product-category-label">Computer Accessories</span>
+                            <h3 class="product-title">NovaNet WiFi 6 Mesh Router</h3>
+                            <p class="product-desc">Dual-band AX3000 wireless router with OFDMA, MU-MIMO, 4 high-gain antennas, and built-in WPA3 network security.</p>
+                            <div class="product-specs-list">
+                                <span class="spec-pill">AX3000 Speed</span>
+                                <span class="spec-pill">Gigabit LAN Ports</span>
+                                <span class="spec-pill">OFDMA + MU-MIMO</span>
+                                <span class="spec-pill">Parental Controls</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="price-wrap">
+                                    <span class="price-label">Price</span>
+                                    <div class="price-value"><span class="price-currency">₹</span>4,299</div>
+                                </div>
+                                <a href="enquiry.html?item=NovaNet%20WiFi%206%20Mesh%20Router" class="btn btn-outline btn-sm">
+                                    <span>Enquire Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Empty State Message -->
+                <div id="no-products-found" style="display: none; text-align: center; padding: 60px 20px;">
+                    <i class="fas fa-search" style="font-size: 3rem; color: var(--text-muted); margin-bottom: 16px;"></i>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 8px;">No matching products found</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Try searching for another keyword or change your category filter.</p>
+                    <button class="btn btn-primary btn-sm" onclick="document.getElementById('product-search').value=''; document.querySelector('.filter-btn[data-filter=\'all\']').click();">Reset Filters</button>
+                </div>
+
+                <!-- Custom PC Request Banner -->
+                <div class="cta-box" style="margin-top: 60px;">
+                    <div class="cta-content">
+                        <h2>Need a Custom Configured Computer?</h2>
+                        <p>Looking for a specific processor, graphics card, or special cooling configuration? Send us your requirements and we will draft an optimized component quotation within 2 hours.</p>
+                    </div>
+                    <div class="cta-actions">
+                        <a href="enquiry.html?item=Custom%20Configured%20PC%20Quotation" class="btn btn-primary">
+                            <i class="fas fa-sliders"></i>
+                            <span>Request Custom Quote</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Quick Actions -->
+    <div class="floating-actions">
+        <button id="back-to-top" class="float-btn float-top" aria-label="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="brand-logo">
+                        <div class="brand-icon-box">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <span>TechNova<span>.</span></span>
+                    </a>
+                    <p>
+                        "Computer Shop" — Premium laptops, custom desktop rigs, studio displays, and verified PC hardware accessories.
+                    </p>
+                    <div style="display: flex; gap: 12px; margin-top: 16px;">
+                        <a href="https://www.linkedin.com" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="mailto:info@technovacomputers.com" class="btn btn-outline btn-sm"><i class="fas fa-envelope"></i> Email</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="products.html"><i class="fas fa-chevron-right"></i> Products</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="enquiry.html"><i class="fas fa-chevron-right"></i> Enquiry Form</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Product Categories</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="products.html?category=gaming"><i class="fas fa-chevron-right"></i> Gaming PCs</a></li>
+                        <li><a href="products.html?category=laptops"><i class="fas fa-chevron-right"></i> Workstation Laptops</a></li>
+                        <li><a href="products.html?category=monitors"><i class="fas fa-chevron-right"></i> Ultrawide Displays</a></li>
+                        <li><a href="products.html?category=peripherals"><i class="fas fa-chevron-right"></i> Mechanical Keyboards</a></li>
+                        <li><a href="products.html?category=accessories"><i class="fas fa-chevron-right"></i> NVMe & RAM Upgrades</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Store Contact</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <strong>Website:</strong><br>
+                            <a href="https://www.technovacomputers.com" target="_blank">www.technovacomputers.com</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <strong>Phone:</strong><br>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email:</strong><br>
+                            <a href="mailto:info@technovacomputers.com">info@technovacomputers.com</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Store Timings:</strong><br>
+                            Mon - Sat: 10:00 AM - 9:00 PM<br>
+                            Sunday: 11:00 AM - 6:00 PM
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
